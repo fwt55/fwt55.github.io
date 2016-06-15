@@ -5,16 +5,19 @@
   
   <title>build varivant | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
+  <meta name="description" content="刚才验证了一下，多个productFlavors情况下初始化build Variants的时候是由字母排序，这样表现出来就是这样的
+所以当我们直接用AS 运行app的时候就会以默认的Build variant运行， 可以指定variant运行，指定之后，除非gradle的productFlavors中删除了默认variant对应的flavors，否则不会改变默认的variant。这也解释了为什么我">
 <meta property="og:type" content="article">
 <meta property="og:title" content="build varivant">
 <meta property="og:url" content="http://yoursite.com/2016/06/15/build-varivant/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description">
-<meta property="og:updated_time" content="2016-06-15T03:21:03.833Z">
+<meta property="og:description" content="刚才验证了一下，多个productFlavors情况下初始化build Variants的时候是由字母排序，这样表现出来就是这样的
+所以当我们直接用AS 运行app的时候就会以默认的Build variant运行， 可以指定variant运行，指定之后，除非gradle的productFlavors中删除了默认variant对应的flavors，否则不会改变默认的variant。这也解释了为什么我">
+<meta property="og:updated_time" content="2016-06-15T03:25:00.889Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="build varivant">
-<meta name="twitter:description">
+<meta name="twitter:description" content="刚才验证了一下，多个productFlavors情况下初始化build Variants的时候是由字母排序，这样表现出来就是这样的
+所以当我们直接用AS 运行app的时候就会以默认的Build variant运行， 可以指定variant运行，指定之后，除非gradle的productFlavors中删除了默认variant对应的flavors，否则不会改变默认的variant。这也解释了为什么我">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -85,11 +88,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>刚才验证了一下，多个productFlavors情况下初始化build Variants的时候是由字母排序，这样表现出来就是这样的</p>
+<p>所以当我们直接用AS 运行app的时候就会以默认的Build variant运行， 可以指定variant运行，指定之后，除非gradle的productFlavors中删除了默认variant对应的flavors，否则不会改变默认的variant。这也解释了为什么我们大多数人的默认variant是pub_dev而不是pub_chnau，因为我们最早的时候只有pub_dev，pub_chnau是后添加的，除非把pub_dev删除，否则默认的variant不会改变。<br>所以，如果大家想直接运行指定的pub_xx版本，只要改build variant就可以了</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/15/build-varivant/" data-id="cipgb9y9e0000qo01u0sc48ou" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/15/build-varivant/" data-id="cipgbe89t0000rw01gbgatzb5" class="article-share-link">Share</a>
       
       
     </footer>
